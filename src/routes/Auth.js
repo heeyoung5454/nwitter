@@ -37,7 +37,7 @@ const Auth = () => {
       if (error.code === "auth/weak-password") {
         setError("패스워드 길이는 최소 6글자여야 합니다");
         //setError(error.message);
-      } else if (error.code == "auth/email-already-in-use") {
+      } else if (error.code === "auth/email-already-in-use") {
         setError("이미 사용중인 이메일입니다");
       }
     }
