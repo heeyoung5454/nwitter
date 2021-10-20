@@ -15,3 +15,6 @@ firebase.initializeApp(firebaseConfig);
 
 // firebase의 인증정보 서비스만 가져온다
 export const authService = firebase.auth();
+
+// 소셜로그인을 위해 필요한 모듈 가져옴
+export const firebaseInstance = firebase;
